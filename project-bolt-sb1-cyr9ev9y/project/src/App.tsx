@@ -29,7 +29,7 @@ function App() {
               <span className="text-white font-bold text-xl">L</span>
             </div>
             <h1 className="text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-purple-600">
-              LogiLens
+              LogLens
             </h1>
           </div>
           
@@ -69,7 +69,7 @@ function App() {
         
         {/* Footer */}
         <footer className="mt-16 text-center text-sm text-gray-500 dark:text-gray-400">
-          <p>© 2025 LogiLens. All rights reserved.</p>
+          <p>© 2025 LogLens. All rights reserved.</p>
           <p className="mt-1">
             <span className="inline-flex items-center bg-gray-100 dark:bg-gray-800 px-2 py-1 rounded text-xs">
               <span className="w-2 h-2 bg-green-500 rounded-full mr-1"></span> All systems operational

@@ -13,7 +13,7 @@ from sqlalchemy.exc import SQLAlchemyError
 from datetime import datetime
 
 # --- Configuration (env or hardcode) ---
-HF_TOKEN        = os.getenv("HF_TOKEN", "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")
+HF_TOKEN        = os.getenv("HF_TOKEN", "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")
 SERPAPI_API_KEY = os.getenv("SERPAPI_API_KEY",
                             "4006359d4844a00d994f0f3e544870549e470bf9d043f804ab04466064244fb6")
 DB_HOST         = os.getenv("DB_HOST",
@@ -42,17 +42,17 @@ SQL_SYSTEM_PROMPT = (
     "       log_protocol, log_status, log_length, log_time, message)\n"
     "Translate the following user request into exactly one valid MySQL query."
     " Output only the SQL statement."
-    # Always treat 'anomalous' or 'error' logs as log_level IN ('WARNING','ERROR','CRITICAL')
+    "Always treat 'anomalous' or 'error' logs as log_level IN ('WARNING','ERROR','CRITICAL')"
     " If the user asks for anomalous or error logs, automatically filter by log_level IN ('WARNING','ERROR','CRITICAL')."
 )
 
 SQL_FEW_SHOTS = [
     {"role": "user", "content": 
-     "List ERROR logs for glance-api from 2025-04-01 to 2025-04-07."},
+     "List ERROR logs for glance-api from 2017-04-01 to 2017-04-07."},
     {"role": "assistant", "content": 
      "SELECT * FROM logs WHERE log_module='glance-api'"
      " AND log_level='ERROR'"
-     " AND log_timestamp BETWEEN '2025-04-01' AND '2025-04-07';"},
+     " AND log_timestamp BETWEEN '2017-04-01' AND '2017-04-07';"},
     {"role": "user", "content": 
      "Count GET requests to '/servers/detail'."},
     {"role": "assistant", "content": 
