@@ -17,6 +17,14 @@ Sample SQL queries:
 1. Return list of erroneous logs in the month of January to August in 2017.
 2. Return count of all logs where APIs were successful vs failures in 2017.
 3. Return list of anamolous logs in May 2017
+4. Return last 10 info based logs
+5. Return last 10 info based logs from nova.osapi_compute.wsgi.server service
+6. Return last 10 error based logs from nova like services
+7. How many errors were found in nova.osapi_compute.wsgi.server service
+8. How many logs had a throughput exceeding 0.1 s?
+9. How many error like logs had a throughput exceeding 0.1 s?
+10.How many error like logs had a throughput exceeding 0.1 s from nova like services? 
+
 
 General:
 Best industry practises to reduce system latency?

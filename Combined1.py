@@ -13,7 +13,7 @@ from sqlalchemy.exc import SQLAlchemyError
 from datetime import datetime
 
 # --- Configuration (env or hardcode) ---
-HF_TOKEN        = os.getenv("HF_TOKEN", "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")
+HF_TOKEN        = os.getenv("HF_TOKEN", "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")
 SERPAPI_API_KEY = os.getenv("SERPAPI_API_KEY",
                             "4006359d4844a00d994f0f3e544870549e470bf9d043f804ab04466064244fb6")
 DB_HOST         = os.getenv("DB_HOST",

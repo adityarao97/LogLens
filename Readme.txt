@@ -13,3 +13,4 @@ DB_NAME         = "log_db"
 
 If HuggingFace token gets expired please use these one for testing
 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
+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
